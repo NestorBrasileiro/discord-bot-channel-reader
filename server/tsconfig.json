@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                 // gera código bem novo
+    "module": "NodeNext",                // módulo nativo do Node (ESM)
+    "moduleResolution": "NodeNext",      // resolve do jeito ESM também
+    "esModuleInterop": true,             // compatibilidade com CJS
+    "allowSyntheticDefaultImports": true,
+    "strict": true,                      // modo rigoroso
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,                // ignora checagem de types de libs
+    "outDir": "./dist",                  // onde sai o JS
+    "rootDir": "./src",                  // de onde lê o TS
+    "sourceMap": true,                   // pra debugar no VSCode bonitão
+    "noEmit": false,                     // deixa emitir js
+    "types": ["node"],                   // pega types do node
+    "resolveJsonModule": true,           // importa JSON direto
+    "experimentalDecorators": true,      // se for usar decorators (tipo class-validator, TypeORM)
+    "emitDecoratorMetadata": true        // idem acima
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
